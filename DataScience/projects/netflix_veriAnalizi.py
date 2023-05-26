@@ -15,7 +15,7 @@ ulkeler.head(20) #ilk 20 veriyi gösterir
 ulkeler = pd.DataFrame({"Yapım Sayısı": data["country"].value_counts()})
 ulkeler
 
-#yapım sayısın veren grafikler
+"""#yapım sayısın veren grafikler
 x = ulkeler.index 
 x = x[0:12]
 
@@ -33,7 +33,7 @@ y = y[2:12]
 renk = ["cyan","cyan","cyan","cyan","cyan","cyan","cyan","red","cyan","cyan"]
 plt.bar(x, y, color = renk)
 plt.title("En çok netflix yapımına sahip olan 12 ülke")
-plt.show()
+plt.show()"""
 
 #yerli yapımlara göz atalım
 yerli1 = data.loc[data["country"]=="Turkey"] #country sütununda Turkey e eşit olan verileri takibe al
